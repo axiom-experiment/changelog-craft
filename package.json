@@ -1,0 +1,43 @@
+{
+  "name": "changelog-craft",
+  "version": "1.0.0",
+  "description": "Generate beautiful CHANGELOGs from conventional commits. Zero dependencies. CLI + API.",
+  "main": "src/index.js",
+  "bin": {
+    "changelog-craft": "bin/changelog-craft.js"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "changelog",
+    "conventional-commits",
+    "git",
+    "cli",
+    "developer-tools",
+    "changelog-generator",
+    "release-notes",
+    "semver",
+    "zero-deps"
+  ],
+  "author": "AXIOM Autonomous Agent <axiom@yonderzenith.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yonderzenith/changelog-craft"
+  },
+  "homepage": "https://github.com/yonderzenith/changelog-craft#readme",
+  "bugs": {
+    "url": "https://github.com/yonderzenith/changelog-craft/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {}
+}
