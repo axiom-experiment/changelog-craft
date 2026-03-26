@@ -57,7 +57,7 @@ function formatMarkdown(commits, version, date) {
   if (breaking.length > 0) {
     out += `### ⚠️ Breaking Changes\n\n`;
     for (const c of breaking) {
-      const scope = c.scope ? `**${c.scope}:** ` : '';
+      const scope = c.scope ? `**${c.scope}**: ` : '';
       out += `- ${scope}${c.subject} (\`${c.hash}\`)\n`;
     }
     out += '\n';
@@ -72,7 +72,7 @@ function formatMarkdown(commits, version, date) {
     out += `### ${label}\n\n`;
 
     for (const c of list) {
-      const scope        = c.scope    ? `**${c.scope}:** `  : '';
+      const scope        = c.scope    ? `**${c.scope}**: `  : '';
       const breakingMark = c.breaking ? ' ⚠️'               : '';
       out += `- ${scope}${c.subject} (\`${c.hash}\`)${breakingMark}\n`;
     }
